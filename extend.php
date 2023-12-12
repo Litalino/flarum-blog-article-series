@@ -11,8 +11,8 @@
 
 namespace Litalino\FlarumArticleSeries;
 
-use Askvortsov\FlarumArticleSeries\Listener\SaveDiscussionArticleSeriesToDatabase;
-use Askvortsov\FlarumArticleSeries\Listener\SaveTagsIsListeningToDatabase;
+use Litalino\FlarumArticleSeries\Listener\SaveDiscussionArticleSeriesToDatabase;
+use Litalino\FlarumArticleSeries\Listener\SaveTagsIsListeningToDatabase;
 use Flarum\Api\Controller\ListDiscussionsController;
 use Flarum\Api\Controller\ShowDiscussionController;
 use Flarum\Api\Serializer\DiscussionSerializer;

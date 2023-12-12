@@ -7,7 +7,7 @@
  * LICENSE file that was distributed with this source code.
  */
 
-namespace Askvortsov\FlarumArticleSeries\Listener;
+namespace Litalino\FlarumArticleSeries\Listener;
 
 use Flarum\Discussion\Event\Saving;
 use Illuminate\Support\Arr;

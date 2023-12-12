@@ -1,104 +1,93 @@
 {
-    "name": "litalino/flarum-blog-article-series",
-    "description": "Article Series for Flarum Blog",
-    "keywords": [
-        "flarum",
-        "flarum",
-        "flarum extension",
-        "blog"
-    ],
-    "type": "flarum-extension",
-    "license": "MIT",
-    "require": {
-        "flarum/core": "^1.0.0",
-        "flarum/tags": "^1.0.0",
-        "v17development/flarum-blog": "^0.7.7"
+  "name": "litalino/flarum-blog-article-series",
+  "description": "Article Series for Flarum Blog",
+  "keywords": [
+    "flarum",
+    "flarum",
+    "flarum extension",
+    "blog"
+  ],
+  "type": "flarum-extension",
+  "license": "MIT",
+  "require": {
+    "flarum/core": "^1.0.0",
+    "flarum/tags": "^1.0.0",
+    "v17development/flarum-blog": "^0.7.7"
+  },
+  "require-dev": {
+    "flarum/testing": "^1.0.0"
+  },
+  "authors": [
+    {
+      "name": "litalino",
+      "email": "info@khatvongsong.vn",
+      "role": "Co-development"
     },
-    "require-dev": {
-        "flarum/testing": "^1.0.0"
+    {
+      "name": "Alexander Skvortsov",
+      "email": "sasha.skvortsov109@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Litalino\\FlarumArticleSeries\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Litalino\\FlarumArticleSeries\\Tests\\": "tests/"
+    }
+  },
+  "homepage": "https://khatvongsong.vn",
+  "support": {
+    "issues": "https://github.com/litalino/flarum-more-bbcode/issues",
+    "source": "https://github.com/litalino/flarum-more-bbcode",
+    "forum": "https://discuss.flarum.org/d/33616-bbcode-more-bbcode"
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Blog Article Series",
+      "category": "feature",
+      "icon": {
+        "name": "fas fa-book",
+        "backgroundColor": "#6932D1",
+        "color": "#fff"
+      }
     },
-    "authors": [
-        {
-            "name": "litalino",
-            "email": "info@khatvongsong.vn",
-            "role": "Co-development"
-        },
-        {
-            "name": "Alexander Skvortsov",
-            "email": "sasha.skvortsov109@gmail.com",
-            "role": "Developer"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Litalino\\FlarumArticleSeries\\": "src/"
-        }
-    },
-    "autoload-dev": {
-        "psr-4": {
-            "Litalino\\FlarumArticleSeries\\Tests\\": "tests/"
-        }
-    },
-    "homepage": "https://khatvongsong.vn",
-    "support": {
-        "issues": "https://github.com/litalino/flarum-more-bbcode/issues",
-        "source": "https://github.com/litalino/flarum-more-bbcode",
-        "forum": "https://discuss.flarum.org/d/33616-bbcode-more-bbcode"
-    },
-    "extra": {
-        "flarum-extension": {
-            "title": "Blog Article Series",
-            "category": "feature",
-            "icon": {
-                "name": "fas fa-book",
-                "backgroundColor": "#6932D1",
-                "color": "#fff"
-            }
-        },
-        "flarum-cli": {
-            "modules": {
-                "admin": true,
-                "forum": true,
-                "js": true,
-                "jsCommon": true,
-                "gitConf": true,
-                "githubActions": true,
-                "prettier": true,
-                "typescript": false,
-                "bundlewatch": false,
-                "backendTesting": true,
-                "editorConfig": true,
-                "styleci": true
-            }
-        }
-    },
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../*/*"
-        }
-    ],
-    "require-dev": {
-        "flarum/phpstan": "*"
-    },
-    "scripts": {
-        "test": [
-            "@test:unit",
-            "@test:integration"
-        ],
-        "test:unit": "phpunit -c tests/phpunit.unit.xml",
-        "test:integration": "phpunit -c tests/phpunit.integration.xml",
-        "test:setup": "@php tests/integration/setup.php",
-        "analyse:phpstan": "phpstan analyse",
-        "clear-cache:phpstan": "phpstan clear-result-cache"
-    },
-    "scripts-descriptions": {
-        "test": "Runs all tests.",
-        "test:unit": "Runs all unit tests.",
-        "test:integration": "Runs all integration tests.",
-        "test:setup": "Sets up a database for use with integration tests. Execute this only once.",
-        "analyse:phpstan": "Run static analysis"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    "flarum-cli": {
+      "modules": {
+        "admin": true,
+        "forum": true,
+        "js": true,
+        "jsCommon": true,
+        "gitConf": true,
+        "githubActions": true,
+        "prettier": true,
+        "typescript": false,
+        "bundlewatch": false,
+        "backendTesting": false,
+        "editorConfig": true,
+        "styleci": true
+      }
+    }
+  },
+  "repositories": [
+    {
+      "type": "path",
+      "url": "../../*/*"
+    }
+  ],
+  "require-dev": {
+    "flarum/phpstan": "*"
+  },
+  "scripts": {
+    "analyse:phpstan": "phpstan analyse",
+    "clear-cache:phpstan": "phpstan clear-result-cache"
+  },
+  "scripts-descriptions": {
+    "analyse:phpstan": "Run static analysis"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
