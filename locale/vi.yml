@@ -1,0 +1,18 @@
+askvortsov-article-series:
+  admin:
+    edit_tags:
+      is_article_series: Có phải là loạt bài viết liên quan không?
+
+  forum:
+    article_item:
+      next_article: Tiếp theo
+      prev_article: Bài viết trước
+    article_list:
+      title: "{series} <sup>Bài viết khác</sup>"
+    article_series_modal:
+      title: Cài đặt bài viết liên quan
+      tag_id_label: Thẻ loạt bài viết
+      order_label: Chỉ số bài viết (sắp xếp tăng dần)
+      submit_button: Gửi
+    discussion_controls:
+        article_series_button: Cài đặt loại bài viết

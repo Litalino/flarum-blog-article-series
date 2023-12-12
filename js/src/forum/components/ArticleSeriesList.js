@@ -10,7 +10,35 @@ export default class ArticleSeriesList extends Component {
 
     if (!articleSeries) return '';
 
-    const articles = articleSeries.articles();
+    //const articles = articleSeries.articles();
+    const get_articles = articleSeries.articles();
+    console.log(get_articles);
+
+    //this.articles_randomSeries = get_articles.subList(0, 5);
+    //console.log(this.articles_randomSeries);
+    //this.featuredPosts = articles.slice(0, this.featuredCount);
+    //this.articlesCount = 6;
+    //this.articles = get_articles.length > this.articlesCount ? get_articles.slice(this.articlesCount, get_articles.length) : get_articles;
+    //const articles = this.articles;
+    this.articlesCount = 5;
+
+    if (get_articles.length > this.articlesCount) {
+      var newItems = [];
+
+      for (var i = 0; i < 5; i++) {
+        var idx = Math.floor(Math.random() * get_articles.length);
+        //newItems.push(items[idx]);
+        //items.splice(idx, 1);
+        newItems.push(get_articles.splice(idx, 1)[0]);
+      }
+      this.articles = newItems;
+      //console.log(newItems);
+
+    } else {
+      this.articles = get_articles;
+      //console.log(get_articles);
+    }
+    const articles = this.articles;
 
     return (
       <div className="BlogArticleList BlogSideWidget">

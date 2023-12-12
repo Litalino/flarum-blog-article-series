@@ -8,7 +8,7 @@ askvortsov-article-series:
       next_article: Next article
       prev_article: Previous article
     article_list:
-      title: "{series} Article Series"
+      title: "{series} <sup>Other articles</sup>"
     article_series_modal:
       title: Article Series Settings
       tag_id_label: Article Series Tag
