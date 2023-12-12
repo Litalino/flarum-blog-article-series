@@ -6,7 +6,7 @@ export default class ArticleSeriesList extends Component {
     if (this.attrs.discussion == null) return '';
 
     const articleSeries = this.attrs.discussion.articleSeries();
-    console.log(articleSeries);
+    //console.log(articleSeries);
 
     if (!articleSeries) return '';
 
