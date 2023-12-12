@@ -10,7 +10,8 @@ PLugin Clone Co-development: Litalino/flarum-blog-article-series
 
 This allows you to create article series by labelling discussions with certain secondary tags.
 
-![](https://i.imgur.com/uJ74H6g.jpg)
+![blog-article-series](https://github.com/Litalino/flarum-blog-article-series/assets/99712477/89bbdac5-b3ca-4521-9464-7495a613b17b)
+
 
 Live site: [ceramichacker.com](https://ceramichacker.com)
 
