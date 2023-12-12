@@ -12,7 +12,7 @@ export default class ArticleSeriesList extends Component {
 
     //const articles = articleSeries.articles();
     const get_articles = articleSeries.articles();
-    console.log(get_articles);
+    //console.log(get_articles);
 
     //this.articles_randomSeries = get_articles.subList(0, 5);
     //console.log(this.articles_randomSeries);
