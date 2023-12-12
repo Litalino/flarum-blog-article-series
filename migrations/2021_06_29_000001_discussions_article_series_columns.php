@@ -2,17 +2,17 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Schema\Builder;
-use Illuminate\Support\Facades\Schema;
+//use Illuminate\Support\Facades\Schema;
 
 
 return [
     'up' => function (Builder $schema) {
         if ($schema->hasTable('discussions')) {
-            if (Schema::hasColumn('discussions', 'article_series_id')) {
+            if ($schema->hasColumn('discussions', 'article_series_id')) {
                 return;
             }
 
-            if (Schema::hasColumn('discussions', 'article_series_order')) {
+            if ($schema->hasColumn('discussions', 'article_series_order')) {
                 return;
             }
         }
